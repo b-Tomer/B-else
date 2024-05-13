@@ -80,9 +80,12 @@ export default function Header() {
                         {/* <Link href="https://wa.me/9720505507556" className="">
                             <FaWhatsapp className='w-6 h-6' />
                         </Link> */}
-                        <Link href={''} className="">
-                            <SlSocialInstagram className='w-6 h-6' />
+                        <Link legacyBehavior href="https://www.instagram.com/lu_lihi_benaim/" passHref>
+                            <a target="_blank" rel="noopener noreferrer" className="">
+                                <SlSocialInstagram className='w-6 h-6' />
+                            </a>
                         </Link>
+
                         <Link href={''} className="">
                             <FaFacebookF className='w-6 h-6' />
                         </Link>
