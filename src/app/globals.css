@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Noto+Sans+Hebrew:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +6,7 @@
 :root{
     --main-blue: #7A9EAF;
     --main-purple: #655989;
-    --main-orange: #FFCEBB;
+    --main-orange: #EC8F5E;
     --main-background: #EEEEEE;
 
 }

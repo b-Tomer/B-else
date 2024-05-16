@@ -7,19 +7,19 @@ export default function ServicesSection() {
     const services = [
         {
             iconURL: '/images/brainstorm.png',
-            header: 'הצוות שלנו ',
+            header: 'עיצוב וחווית משתמש',
             text: 'מעצבי UI/UX , מתכנתים בקוד מהשורה הראשונה, אנשי שיווק וקידום אתרים, קריאייטיב ועוד...',
             link: "#projects"
         },
         {
             iconURL: '/images/laptop.png',
-            header: '',
-            text: 'some text about it',
+            header: 'בניית אתר בקוד',
+            text: 'אנו מציעים בניית אתרים בקוד מותאם בשימוש ב-Next.js, מה שמאפשר גמישות עיצובית רחבה, ביצועים מהירים ואבטחה מוגברת. אתרכם יהיה ייחודי ומותאם במדויק לצרכים שלכם, תוך הבטחת סקאלביליות ויכולת תחזוקה עתידית עצמאית.',
             link: "#projects"
         },
         {
             iconURL: '/images/camera.png',
-            header: '',
+            header: 'מיתוג אישי',
             text: 'some text about it',
             link: "#projects"
         },

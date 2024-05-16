@@ -17,7 +17,7 @@ export default function Home() {
 
       </Head>
 
-      <section className="relative ">
+      <section className="relative font-ibm ">
         <Header />
         <HeroSection />
         <ServicesSection />

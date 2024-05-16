@@ -23,7 +23,7 @@ export default function ServicePreview({ service }) {
             <h2 className='font-bold text-xl'>{header}</h2>
             <p> {text}</p>
 
-            <button onClick={handleClick} className='bg-main-purple text-white p-2 w-max my-2'>LEARN MORE</button>
+            {/* <button onClick={handleClick} className='bg-main-purple text-white p-2 w-max my-2'>LEARN MORE</button> */}
         </div>
     )
 }

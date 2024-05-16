@@ -9,6 +9,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {},
+      fontFamily: {
+        'ibm': ['IBM Plex Sans Hebrew', 'sans-serif'],
+        'cus': ['Cousine', 'sans-serif'],
+        'noto': ['Noto Sans Hebrew', 'sans-serif'],
+      },
       colors: {
         'main-blue': "var(--main-blue)",
         'main-purple': "var(--main-purple)",

@@ -31,10 +31,10 @@ export default function Header() {
 
     return (
         <header className='relative' >
-            <section className='h-10 bg-main-purple'>
+            {/* <section className='h-10 bg-main-purple'>
 
-            </section>
-            <nav className="bg-gray-100 text-main-blue border-b py-1 z-40 w-full ">
+            </section> */}
+            <nav className="bg-main-purple text-main-background border-b py-1 z-40 w-full ">
                 <SideNav toggleNav={toggleNav} isOpen={isOpen} />
                 <div className="container mx-auto flex justify-between items-center px-3 sm:px-6">
 
@@ -68,10 +68,10 @@ export default function Header() {
                     />
 
 
-                    <div className="hidden sm:flex sm:items-center text-center sm:justify-center gap-2 sm:gap-3">
-                        <a onClick={() => scrollToSection('projects')} className="hover:text-main-blue cursor-pointer">פרוייקטים</a><span>|</span>
-                        <a onClick={() => scrollToSection('projects')} className="hover:text-main-blue cursor-pointer">לקוחות</a><span>|</span>
-                        <a onClick={() => scrollToSection('projects')} className="hover:text-main-blue cursor-pointer">הצוות שלנו</a><span>|</span>
+                    <div className="hidden sm:text-xl sm:flex sm:items-center text-center sm:justify-center gap-3 sm:gap-5">
+                        <a onClick={() => scrollToSection('projects')} className="hover:text-main-blue cursor-pointer">פרוייקטים</a>
+                        <a onClick={() => scrollToSection('projects')} className="hover:text-main-blue cursor-pointer">לקוחות</a>
+                        <a onClick={() => scrollToSection('projects')} className="hover:text-main-blue cursor-pointer">הצוות שלנו</a>
                         <a onClick={() => scrollToSection('projects')} className="hover:text-main-blue cursor-pointer">אודות</a>
                     </div>
 
