@@ -1,4 +1,6 @@
 
+import About from "@/Components/About";
+import ContactSection from "@/Components/ContactSection";
 import FeaturedProjects from "@/Components/FeaturedProjects";
 import Footer from "@/Components/Footer";
 import Header from "@/Components/Header";
@@ -21,7 +23,9 @@ export default function Home() {
         <Header />
         <HeroSection />
         <ServicesSection />
+        <ContactSection />
         <FeaturedProjects />
+        <About />
       </section>
 
 

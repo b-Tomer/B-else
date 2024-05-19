@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textShadow: {
+        'default': '2px 2px 4px rgba(0, 0, 0, 0.5)',
+        'md': '4px 4px 6px rgba(0, 0, 0, 0.7)'
+      },
       backgroundImage: {},
       fontFamily: {
         'ibm': ['IBM Plex Sans Hebrew', 'sans-serif'],
@@ -22,5 +26,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 };

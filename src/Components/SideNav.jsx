@@ -4,13 +4,18 @@ import Link from 'next/link';
 import { FaWhatsapp } from 'react-icons/fa6';
 import { MdMailOutline } from 'react-icons/md';
 
-const SideNav = ({ toggleNav, isOpen }) => {
+const SideNav = ({ onCloseNav, isOpen }) => {
+
+    function handleLinkClick(sectionId) {
+        onCloseNav()
+        scrollToSection(sectionId)
+    }
 
     return (
         <>
             {isOpen && (
                 <div
-                    onClick={toggleNav}
+                    onClick={onCloseNav}
                     className="fixed inset-0 bg-gray-800 opacity-50 z-50"
                 />
             )}
@@ -22,10 +27,10 @@ const SideNav = ({ toggleNav, isOpen }) => {
             >
                 <div className='flex flex-col justify-between h-full pb-5 '>
                     <div className="px-3 pt-10 flex flex-col gap-1 select-none text-lg  ">
-                    <a onClick={() => scrollToSection('projects')} className="hover:bg-gray-100 cursor-pointer p-2 w-full">פרוייקטים</a>
-                        <a onClick={() => scrollToSection('projects')} className="hover:bg-gray-100 cursor-pointer p-2 w-full">לקוחות</a>
-                        <a onClick={() => scrollToSection('projects')} className="hover:bg-gray-100 cursor-pointer p-2 w-full">הצוות שלנו</a>
-                        <a onClick={() => scrollToSection('projects')} className="hover:bg-gray-100 cursor-pointer p-2 w-full">אודות</a>
+                        <a onClick={() => handleLinkClick('services')} className="hover:bg-gray-100 cursor-pointer p-2 w-full">השירותים שלנו</a>
+                        <a onClick={() => handleLinkClick('projects')} className="hover:bg-gray-100 cursor-pointer p-2 w-full">פרויקטים</a>
+                        <a onClick={() => handleLinkClick('about')} className="hover:bg-gray-100 cursor-pointer p-2 w-full">קצת עלינו</a>
+                        <a onClick={() => handleLinkClick('contact')} className="hover:bg-gray-100 cursor-pointer p-2 w-full">צור קשר</a>
                     </div>
 
                     <div className='flex flex-col justify-center items-center'>

@@ -6,9 +6,9 @@ export default function HeroSection() {
         backgroundRepeat: 'no-repeat'
     };
     return (
-        <div style={heroBackgroundStyle} className="bg-gray-200 flex items-end text-center py-12 h-[70vh]">
-            <h1 className="text-3xl font-bold mb-3 text-main-background  w-max p-2 mx-auto">ההבדל בין פרויקט טוב לפרויקט מצוין</h1>
-            {/* Include a search form here */}
+        <div style={heroBackgroundStyle} className="bg-gray-200 flex flex-col sm:justify-end text-center py-12 h-[70vh] font-ibm">
+            <h1 className="text-shadow-md text-2xl sm:text-4xl text-main-orange sm:w-max mx-auto">Redefining the Web Experience</h1>
+            <h2 className="text-main-background drop-shadow-xl mx-auto">Join us to be something else</h2>
         </div>
     );
 };

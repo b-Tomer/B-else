@@ -1,3 +1,4 @@
+import { scrollToSection } from "@/utils/helpers";
 import ServicePreview from "./ServicePreview";
 
 
@@ -27,12 +28,13 @@ export default function ServicesSection() {
 
     return (
         <div className="bg-white pb-10 text-center">
-            <div className="bg-main-orange py-20">
-                <h1 className="text-3xl font-bold mb-3 text-slate-600">Makes it better</h1>
-                <p className="mb-6 text-slate-600">כחברה מצטיינת ומובילה במקצוענות וחדשנות עם דגש על רמת שירות גבוהה לטובת לקוחותיה. חזון החברה מוטמע בכל מחלקות החברה, תוך שימת דגש על מספר ערכים מרכזיים: חתירה למצוינות ומקצוענות באיכות כתיבת הקוד בפיתוח שאיפה מתמדת לחדשנות בתחום עיצוב אתרים לצד ממשקי משתמש מתקדמים עם דגש על הטכנולוגיה. חשיבה גלובאלית, פעילות לוקאלית, יחס אישי, הגינות, יושרה ופתיחות שקיפות מלאה מול הלקוח!</p>
+            <div className="bg-main-purple py-40">
+                <button
+                    onClick={() => scrollToSection("contact")}
+                    className="text-xl hover:scale-110 duration-300 shadow-xl bg-main-background font-semibold p-3 px-6 rounded-lg font-sans">JOIN US</button>
             </div>
 
-            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-3 p-6 gap-4">
+            <div id="services" className="container mx-auto py-20 px-6 sm:px-0 grid grid-cols-1 sm:grid-cols-3 sm:gap-8 md:gap-3 gap-20">
                 {services.map((service, index) =>
                     <ServicePreview
                         key={index}
